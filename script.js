@@ -50,7 +50,7 @@ let mouseTimeout;
 function moveButton() {
     if (!isMoving) return;
     const pos = getRandomPosition();
-    noBtn.style.transition = 'all 0.6s ease 0.6s';
+    noBtn.style.transition = 'all 0.6s ease 1s';
     noBtn.style.left = `${pos.x}px`;
     noBtn.style.top = `${pos.y}px`;
     moveTimeout = setTimeout(moveButton, Math.random() * 400 + 100);
@@ -84,7 +84,7 @@ function autoDodge() {
             
             if (distance < safeDistance) {
                 const pos = getRandomPosition();
-                noBtn.style.transition = 'all 0.6s ease 0.6s';
+                noBtn.style.transition = 'all 0.6s ease 1s';
                 noBtn.style.left = `${pos.x}px`;
                 noBtn.style.top = `${pos.y}px`;
             }
