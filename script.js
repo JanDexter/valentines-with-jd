@@ -50,7 +50,7 @@ let mouseTimeout;
 function moveButton() {
     if (!isMoving) return;
     const pos = getRandomPosition();
-    noBtn.style.transition = 'all 0.2s ease';
+    noBtn.style.transition = 'all 0.2s ease 0.5s';
     noBtn.style.left = `${pos.x}px`;
     noBtn.style.top = `${pos.y}px`;
     moveTimeout = setTimeout(moveButton, Math.random() * 400 + 100);
@@ -84,7 +84,7 @@ function autoDodge() {
             
             if (distance < safeDistance) {
                 const pos = getRandomPosition();
-                noBtn.style.transition = 'all 0.2s ease';
+                noBtn.style.transition = 'all 0.2s ease 0.5s';
                 noBtn.style.left = `${pos.x}px`;
                 noBtn.style.top = `${pos.y}px`;
             }
@@ -123,8 +123,8 @@ window.addEventListener('resize', () => {
 });
 
 yesBtn.addEventListener('click', () => {
-    question.textContent = 'YIIIIIIIIIIIEEEEE you like me pala';
-    document.getElementById('gifImage').src = 'https://media1.tenor.com/m/h_cxNMxONl0AAAAd/yippe-genshin.gif';
+    question.textContent = 'Skibidi rizz thank you sigma';
+    document.getElementById('gifImage').src = 'https://media1.tenor.com/m/0YtqE5P6_p0AAAAC/erm-what.gif';
     noBtn.style.display = 'none';
     yesBtn.style.display = 'none';
 });
