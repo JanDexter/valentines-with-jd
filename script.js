@@ -50,7 +50,7 @@ let mouseTimeout;
 function moveButton() {
     if (!isMoving) return;
     const pos = getRandomPosition();
-    noBtn.style.transition = 'all 0.2s ease';
+    noBtn.style.transition = 'all 0.6s ease';
     noBtn.style.left = `${pos.x}px`;
     noBtn.style.top = `${pos.y}px`;
     moveTimeout = setTimeout(moveButton, Math.random() * 400 + 100);
