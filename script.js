@@ -123,8 +123,8 @@ window.addEventListener('resize', () => {
 });
 
 yesBtn.addEventListener('click', () => {
-    question.textContent = 'YIIIIIIIIIIIEEEEE you like me pala';
-    document.getElementById('gifImage').src = 'https://media1.tenor.com/m/h_cxNMxONl0AAAAd/yippe-genshin.gif';
+    question.textContent = 'Skibidi rizz thank you sigma';
+    document.getElementById('gifImage').src = 'https://media1.tenor.com/m/0YtqE5P6_p0AAAAC/erm-what.gif';
     noBtn.style.display = 'none';
     yesBtn.style.display = 'none';
 });
